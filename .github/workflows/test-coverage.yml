@@ -25,7 +25,7 @@ jobs:
 
       # Runs and build docker
       - name: Run and build docker
-        run: docker compose up --build
+        run: docker compose up
 
       # Runs test
       - name: Run test
