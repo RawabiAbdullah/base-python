@@ -99,4 +99,5 @@ def seed_data(client: TestClient):
     ScopedSession.remove()
     db_connection.commit()
 
+
     return data
