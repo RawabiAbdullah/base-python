@@ -24,8 +24,8 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs and build docker
-      - name: Run and build docker
-        run: docker compose up
+#       - name: Run and build docker
+#         run: docker compose up
 
       # Runs test
       - name: Run test
