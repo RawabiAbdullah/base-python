@@ -91,7 +91,7 @@ def seed_data(client: TestClient):
         response = client.post("/user", json=user)
         assert response.status_code == 200
         response = client.post("/user/login", json=user)
-        assert response.status_code == 400
+        assert response.status_code == 200
         data.users_tokens.append(response.json()["access_token"])
 
     print(f"{len(data.users)} users has been created")
